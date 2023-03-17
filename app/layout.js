@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             </li>
           </ul>
         </nav>
-        <div className={montserrat.className}>{children}</div>
+        <div className={`${montserrat.className}`}>{children}</div>
       </body>
     </html>
   );
