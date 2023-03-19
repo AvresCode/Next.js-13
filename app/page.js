@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <main>
-      <h1 className="text-3xl font-bold underline"> Popular Movies</h1>
+      <h1 className="text-3xl font-bold underline my-8"> Popular Movies</h1>
       <div className="grid gap-16 grid-cols-fluid">
         {response.results.map((movie) => (
           <Movie
