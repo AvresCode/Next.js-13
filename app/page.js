@@ -5,7 +5,6 @@ export default async function Home() {
   );
 
   const response = await moviesData.json();
-  console.log(response);
 
   return (
     <main>
