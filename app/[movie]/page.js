@@ -10,14 +10,17 @@ export default async function MovieDetail({ params }) {
   console.log("movie detail", response);
   return (
     <div>
-      <h1> {response.title}</h1>
-      <p>{response.release_date}</p>
-      <p>{response.status}</p>
+      <h1 className="text-2xl font-bold"> {response.title}</h1>
+      <p className="my-3">{response.release_date}</p>
+      <p className="bg-purple-200 rounded-md inline-block py-2 px-5 my-2">
+        {response.status}
+      </p>
       <Image
         src={imagePath + response.backdrop_path}
         alt={response.title}
         width={1000}
         height={1000}
+        className="w-full  rounded-2xl"
       />
     </div>
   );
